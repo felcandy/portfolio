@@ -1,0 +1,142 @@
+/*
+Author: Danielle Van Allen
+Date: 02/07/2021
+File name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Style rules for body and images */
+body {
+		background-color: #CCC /* gray */
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block
+}
+
+/* Style rule for header */
+header {
+	width: 200px;
+	z-index: 1;
+	position: fixed;
+	text-align: center;
+	background-color: #A9BA9D; /* hexadecimal "laurel color" */
+}
+
+/* Style rules for navigation area */
+nav {
+  height: 100%;
+  width: 200px;
+  position: fixed; /* no scrolling */
+  z-index: auto; /* keeps element on top */
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden; /* no horizontal scrolling */
+  padding-top: 200px;
+}
+
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+
+nav li {
+	text-align: right;
+	font-size: 1.5em;
+	font-family: Garamond, Times, serif;
+	font-weight: bold;
+}
+
+
+nav li a {
+	display: block;
+	color: #666;
+	text-align: right;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+  margin-left: 200px; /* Same as the width of the sidebar */
+  padding: 0;
+}
+
+main p {
+	text-align: center;
+}
+
+main a {
+	text-decoration: none;
+	color: #829a70; /* darker laurel green */
+	font-size: 1.5em;
+}
+
+
+/* Portfolio, Sketches, Logos gallery images */
+div.gallery {
+	margin: 5px;
+	box-shadow: 2px 2px 3px; /* really cool drop shadow effect */
+	float: left;
+	width: 300px;
+}
+
+div.gallery:hover {
+	border: 1px solid #fff; /* white border on hover */
+}
+
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+
+div.desc {
+	padding: 15px;
+	text-align: center;
+}
+/* End of gallery css */
+
+
+.responsive {
+	display: block;
+	margin-left: auto;
+	width: 100%;
+	height: auto;
+}
+
+/* Style rules for footer content */
+
+footer p {
+
+	z-index: 1;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	background-color: white;
+	float: bottom;
+	font-size: 0.75em;
+	color: gray;
+	padding: 0 1em;
+	margin-left: 200px;
+
+}
+
+footer p a {
+	color: #808238;
+	text-decoration: none;
+
+}
+
