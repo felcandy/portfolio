@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <!-- This website was created by Danielle Van Allen, 
 		the file name is index.html
-		and the current date is 02/07/2021-->
+		and the current date is 02/21/2021-->
 <html lang="en">
 
 <head>
 
-	<title>Portfolio of Danielle Van Allen</title>
-	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<title>Portfolio of Danielle Van Allen</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet">
 	
 </head>
 
 <body>
-
-	<!-- Branding -->
+	<div id="container">
+	
+		<!-- Branding -->
 	<header>
 
-		<a href="index.html"><img src="images/stone_logo.png" alt="Stone Block Logo for FelCandyArt"></a>
-			
-		<!--Mission Statement-->	
-		<p>Danielle Van Allen is creating beautiful artistic designs with creativity, originality, and a personal touch.</p>
-				
+		<figure>
+			<a href="index.html"><img src="images/stone_logo.png" alt="Stone Block Logo for FelCandyArt"></a>
+
+			<!--Mission Statement-->	
+			<figcaption>
+				<p>Danielle Van Allen is creating beautiful artistic designs with creativity, originality, and a personal touch.</p>
+			</figcaption>
+		</figure>
+		
 	</header>
 	
-	<!-- Hyperlinks to other pages within the website -->
-	<nav>
+		<!-- Hyperlinks to other pages within the website -->
+		<nav>
 			<ul>
 				<li><a href="portfolio.html">Portfolio</a></li>
 				<li><a href="sketches.html">Sketches</a></li>
@@ -34,19 +42,22 @@
 				<li><a href="faq.html">FAQ</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
-	</nav>
+		</nav>
 		
-	<!-- This area will hold the hero image of my portfolio, showcasing artwork. -->
-	<main> 
-			<!-- Hero image, responsive scaling -->
-			<img src="images/mistspren.png" alt="Original digital painting of a Mistspren from the book Rhythm of War by Brandon Sanderson." class="responsive">
+		<!-- This area will hold the hero image of my portfolio, showcasing artwork. -->
+		<main> 
+			<figure> <!-- did not use grid here because it would not work with my layout -->
+				<!-- Hero image, responsive scaling -->
+				<img src="images/mistspren.png" alt="Original digital painting of a Mistspren from the book Rhythm of War by Brandon Sanderson." class="responsive">
+			</figure>
 			
-	</main>
+		</main>
 		
-	<!-- Copyright information and email. -->
-	<footer>
-		<p>&copy; Copyright 2021. All Rights Reserved. <a href="mailto:dvanallen001@my.wilmu.edu">dvanallen001@my.wilmu.edu</a></p>
-	</footer>
+		<!-- Copyright information and email. -->
+		<footer>
+			<p>&copy; Copyright 2021. All Rights Reserved. <a href="mailto:dvanallen001@my.wilmu.edu">dvanallen001@my.wilmu.edu</a></p>
+		</footer>
 	
+	</div>
 </body>
 </html>

@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <!-- This website was created by Danielle Van Allen, 
 		the file name is logos.html
-		and the current date is 02/07/2021-->
+		and the current date is 02/21/2021-->
 <html lang="en">
 
 <head>
 
-	<title>Logo Art</title>
-	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<title>Logos</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet">
 	
 </head>
 
@@ -17,11 +20,15 @@
 	<!-- Branding -->
 	<header>
 
-		<a href="index.html"><img src="images/stone_logo.png" alt="Stone Block Logo for FelCandyArt"></a>
-			
-		<!--Mission Statement-->	
-		<p>Danielle Van Allen is creating beautiful artistic designs with creativity, originality, and a personal touch.</p>
-				
+		<figure>
+			<a href="index.html"><img src="images/stone_logo.png" alt="Stone Block Logo for FelCandyArt"></a>
+
+			<!--Mission Statement-->	
+			<figcaption>
+				<p>Danielle Van Allen is creating beautiful artistic designs with creativity, originality, and a personal touch.</p>
+			</figcaption>
+		</figure>
+		
 	</header>
 	
 	<!-- Hyperlinks to other pages within the website -->
@@ -38,34 +45,79 @@
 	
 	<main>
 		
-		<div class="gallery">
-			<a target="_blank" href="images/Logo1.png">
-				<img src="images/Logo1.png" alt="Gemstone Logo" width="600" height="400">
-			</a>
-			<div class="desc">Broken Gemstone</div>
-		</div>
+		<div class="grid">
+			<div class="tablet">
+				<article>
 
-		<div class="gallery">
-			<a target="_blank" href="images/Logo2.png">
-				<img src="images/Logo2.png" alt="Key and Quill Logo" width="600" height="400">
-			</a>
-			<div class="desc">Key and Quill</div>
-		</div>
+					<h2>Logo Gallery</h2>
 
-		<div class="gallery">
-			<a target="_blank" href="images/Logo3.png">
-				<img src="images/Logo3.png" alt="Crow" width="600" height="400">
-			</a>
-			<div class="desc">The Black Company</div>
-		</div>
+					<figure class="gallery">
+						<a target="_blank" href="images/Logo1.png">
+							<img src="images/Logo1.png" alt="Gemstone Logo">
+						</a>
+					</figure>
+					
+					<figure class="gallery">
+						<a target="_blank" href="images/Logo2.png">
+							<img src="images/Logo2.png" alt="Key and Quill Logo">
+						</a>
+					</figure>
+					
+					<figure class="gallery">
+						<a target="_blank" href="images/Logo3.png">
+							<img src="images/Logo3.png" alt="Crow">
+						</a>
+					</figure>
 
-		<div class="gallery">
-			<a target="_blank" href="images/Logo4.png">
-				<img src="images/Logo4.png" alt="Heavenly Ones" width="600" height="400">
-			</a>
-			<div class="desc">Heavenly Ones</div>
+					<figure class="gallery">
+						<a target="_blank" href="images/Logo4.png">
+							<img src="images/Logo4.png" alt="Heavenly Ones">
+						</a>
+					</figure>
+					<br>
+					
+				</article>
+			</div>
 		</div>
-		<br>
+		
+		<div class="grid">
+			<div class="desktop">
+				<article>
+			
+					<h2>Logo Gallery</h2>
+			
+					<figure class="gallery">
+						<a target="_blank" href="images/Logo1.png">
+							<img src="images/Logo1.png" alt="Gemstone Logo">
+						</a>
+						<figcaption class="desc">Broken Gemstone</figcaption>
+					</figure>
+		
+					<figure class="gallery">
+						<a target="_blank" href="images/Logo2.png">
+							<img src="images/Logo2.png" alt="Key and Quill Logo">
+						</a>
+						<figcaption class="desc">Key and Quill</figcaption>
+					</figure>
+		
+					<figure class="gallery">
+						<a target="_blank" href="images/Logo3.png">
+							<img src="images/Logo3.png" alt="Crow">
+						</a>
+						<figcaption class="desc">The Black Company</figcaption>
+					</figure>
+		
+					<figure class="gallery">
+						<a target="_blank" href="images/Logo4.png">
+							<img src="images/Logo4.png" alt="Heavenly Ones">
+						</a>
+						<figcaption class="desc">Heavenly Ones</figcaption>
+					</figure>
+					<br>
+					
+				</article>
+			</div>
+		</div>
 		
 	</main>
 	

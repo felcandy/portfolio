@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <!-- This website was created by Danielle Van Allen, 
 		the file name is portfolio.html
-		and the current date is 02/07/2021-->
+		and the current date is 02/21/2021-->
 <html lang="en">
 
 <head>
 
-	<title>Portfolio Works</title>
-	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<title>Portfolio of Danielle Van Allen</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet">
 	
 </head>
 
@@ -17,11 +20,15 @@
 	<!-- Branding -->
 	<header>
 
-		<a href="index.html"><img src="images/stone_logo.png" alt="Stone Block Logo for FelCandyArt"></a>
-			
-		<!--Mission Statement-->	
-		<p>Danielle Van Allen is creating beautiful artistic designs with creativity, originality, and a personal touch.</p>
-				
+		<figure>
+			<a href="index.html"><img src="images/stone_logo.png" alt="Stone Block Logo for FelCandyArt"></a>
+
+			<!--Mission Statement-->	
+			<figcaption>
+				<p>Danielle Van Allen is creating beautiful artistic designs with creativity, originality, and a personal touch.</p>
+			</figcaption>
+		</figure>
+		
 	</header>
 	
 	<!-- Hyperlinks to other pages within the website -->
@@ -39,34 +46,75 @@
 	<!-- This area will hold the graphical/text component of my portfolio. -->
 	<main>
 		
-		<div class="gallery">
-			<a target="_blank" href="images/Portfolio1.png">
-				<img src="images/Portfolio1.png" alt="Sporgen" width="600" height="400">
-			</a>
-			<div class="desc">Spensa and Jorgen from Skyward.</div>
-		</div>
+		<div class="tablet">
+		<article>
+		
+			<h2>Portfolio Gallery</h2>
 
-		<div class="gallery">
-			<a target="_blank" href="images/portfolio2.jpg">
-				<img src="images/portfolio2.jpg" alt="Vin Mistborn" width="600" height="400">
-			</a>
-			<div class="desc">Vin from Mistborn</div>
-		</div>
+			<figure class="gallery">
+				<a target="_blank" href="images/Portfolio1.png">
+					<img src="images/Portfolio1.png" alt="Sporgen">
+				</a>
+			</figure>
 
-		<div class="gallery">
-			<a target="_blank" href="images/portfolio3.png">
-				<img src="images/portfolio3.png" alt="Nevernight" width="600" height="400">
-			</a>
-			<div class="desc">Mia Corvere from Nevernight</div>
-		</div>
+			<figure class="gallery">
+				<a target="_blank" href="images/portfolio2.jpg">
+					<img src="images/portfolio2.jpg" alt="Vin Mistborn">
+				</a>
+			</figure>
 
-		<div class="gallery">
-			<a target="_blank" href="images/portfolio4.png">
-				<img src="images/portfolio4.png" alt="Peakspren" width="600" height="400">
-			</a>
-			<div class="desc">A Peakspren from Rhythm of War</div>
-		</div>
+			<figure class="gallery">
+				<a target="_blank" href="images/portfolio3.png">
+					<img src="images/portfolio3.png" alt="Nevernight">
+				</a>
+			</figure>
+
+			<figure class="gallery">
+				<a target="_blank" href="images/portfolio4.png">
+					<img src="images/portfolio4.png" alt="Peakspren">
+				</a>
+			</figure>
 		<br>
+		</article>
+		</div>
+		
+		<div class="grid">
+			<div class="desktop">
+			<article>
+				<h2>Portfolio Gallery</h2>
+				
+				<figure class="gallery">
+					<a target="_blank" href="images/Portfolio1.png">
+						<img src="images/Portfolio1.png" alt="Sporgen">
+					</a>
+					<figcaption class="desc">Spensa and Jorgen from Skyward.</figcaption>
+				</figure>
+	
+				<figure class="gallery">
+					<a target="_blank" href="images/portfolio2.jpg">
+						<img src="images/portfolio2.jpg" alt="Vin Mistborn">
+					</a>
+					<figcaption class="desc">Vin from Mistborn</figcaption>
+				</figure>
+	
+				<figure class="gallery">
+					<a target="_blank" href="images/portfolio3.png">
+						<img src="images/portfolio3.png" alt="Nevernight">
+					</a>
+					<figcaption class="desc">Mia Corvere from Nevernight</figcaption>
+				</figure>
+	
+				<figure class="gallery">
+					<a target="_blank" href="images/portfolio4.png">
+						<img src="images/portfolio4.png" alt="Peakspren">
+					</a>
+					<figcaption class="desc">A Peakspren from Rhythm of War</figcaption>
+				</figure>
+			<br>
+	
+			</article>
+			</div>
+		</div>
 		
 	</main>
 	

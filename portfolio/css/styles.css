@@ -1,11 +1,11 @@
 /*
 Author: Danielle Van Allen
-Date: 02/07/2021
+Date: 02/21/2021
 File name: styles.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img {
+body, header, nav, main, footer, h1, div, img, ul, li, p, figcaption, figure, a {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -13,98 +13,146 @@ body, header, nav, main, footer, h1, div, img {
 
 /* Style rules for body and images */
 body {
-		background-color: #CCC /* gray */
+	background-color: #CCC; /* gray */
 }
 
 img {
 	max-width: 100%;
 	height: auto;
-	display: block
+	display: block;
 }
+
+/* Style rules for mobile viewport */
 
 /* Style rule for header */
 header {
-	width: 200px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-color: #A9BA9D;
+	height: 170px;
+	font-family: 'Cormorant', serif;
 	z-index: 1;
-	position: fixed;
+}
+
+header p {
 	text-align: center;
-	background-color: #A9BA9D; /* hexadecimal "laurel color" */
+}
+
+header img {
+	margin: 0 auto;
 }
 
 /* Style rules for navigation area */
 nav {
-  height: 100%;
-  width: 200px;
-  position: fixed; /* no scrolling */
-  z-index: auto; /* keeps element on top */
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  overflow-x: hidden; /* no horizontal scrolling */
-  padding-top: 200px;
+	padding: 1%;
+	margin-bottom: 1%;
+	position: relative;
+	width: 100%;
 }
-
 
 nav ul {
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	text-align: right;
+	text-align: center;
 }
-
 
 nav li {
-	text-align: right;
 	font-size: 1.5em;
-	font-family: Garamond, Times, serif;
-	font-weight: bold;
+	font-family: 'Cormorant', serif;
+	border-top: 1px solid #000;
 }
 
+nav li:first-child {
+	border-top: none;
+}
 
 nav li a {
 	display: block;
-	color: #666;
-	text-align: right;
+	color: #000;
 	padding: 0.5em 1em;
 	text-decoration: none;
 }
 
 /* Style rules for main content */
 main {
-  margin-left: 200px; /* Same as the width of the sidebar */
-  padding: 0;
+	background-color: #CCC;
+	padding: 0%;
+	padding-bottom: 10%;
+	font-size: 1.15em;
+	font-family: 'Cormorant', serif;
 }
 
-main p {
+.contact {
 	text-align: center;
 }
 
-main a {
-	text-decoration: none;
-	color: #829a70; /* darker laurel green */
-	font-size: 1.5em;
+.grid {
+	display: grid;
+	grid-template-columns: auto;
 }
 
+.tablet {
+	display: block;
+}
+
+.desktop {
+	display: none;
+}
+
+.action {
+	font-size: 1.35em;
+	color: #666600;
+	text-decoration: none;
+}
+
+.sociallinks {
+	color: #666600;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+}
+
+.map {
+	border: 2px solid #000;
+	width: 95%;
+	height: 50%;
+}
+
+/* Style rules for footer content */
+footer p {
+	font-size: 0.75em;
+	text-align: center;
+	color: #fff;
+	padding: 0;
+}
+
+footer p a {
+	color: #fff;
+	text-decoration: none;
+}
 
 /* Portfolio, Sketches, Logos gallery images */
-div.gallery {
+figure.gallery {
 	margin: 5px;
-	box-shadow: 2px 2px 3px; /* really cool drop shadow effect */
+	box-shadow: 2px 2px 3px; /* drop shadow effect*/
 	float: left;
 	width: 300px;
+	border-radius: 2px 3px 4px 5px; /* rounded corners */
 }
 
-div.gallery:hover {
+/* Dynamic pseudo-class for desktop mobile query */
+figure.gallery:hover {
 	border: 1px solid #fff; /* white border on hover */
+	border-radius: 2px 3px 4px 5px;
 }
 
-div.gallery img {
+figure.gallery img {
 	width: 100%;
 	height: auto;
+	border-radius: 2px 3px 4px 5px;
 }
 
-div.desc {
-	padding: 15px;
+figcaption {
 	text-align: center;
 }
 /* End of gallery css */
@@ -112,7 +160,7 @@ div.desc {
 
 .responsive {
 	display: block;
-	margin-left: auto;
+	margin: auto;
 	width: 100%;
 	height: auto;
 }
@@ -120,23 +168,45 @@ div.desc {
 /* Style rules for footer content */
 
 footer p {
-
 	z-index: 1;
 	position: fixed;
 	bottom: 0;
 	text-align: center;
 	background-color: white;
-	float: bottom;
 	font-size: 0.75em;
 	color: gray;
 	padding: 0 1em;
-	margin-left: 200px;
-
 }
 
 footer p a {
 	color: #808238;
 	text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px) {
+
+	/* Tablet Viewport: show tablet class, hide desktop class */
+	.tablet {
+		display: block;
+	}
+
+	.desktop {
+		display: none;
+	}
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px) {
+
+	/* Desktop Viewport: show desktop class, hide tablet class */
+
+	.desktop {
+		display: block;
+	}
+	.tablet {
+		display: none;
+	}
 
 }
 
